@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.navaneeth.medical_managament.LoginPageController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <ImageView fx:id="loginImageview" fitHeight="618.0" fitWidth="809.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../../images/LoginPage.png" />
+            </image>
+        </ImageView>
+        <AnchorPane layoutX="265.0" layoutY="55.0" prefHeight="508.0" prefWidth="280.0" style="-fx-background-color: #ffffff; -fx-background-radius: 15;">
+            <children>
+                <Label fx:id="titleLabel" layoutX="104.0" layoutY="47.0" text="LOGIN">
+                    <font>
+                        <Font name="System Bold" size="23.0" />
+                    </font>
+                </Label>
+                <Label layoutX="29.0" layoutY="113.0" text="UserId">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
+                <Label layoutX="29.0" layoutY="203.0" text="Password">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="userIdtext" layoutX="29.0" layoutY="149.0" prefHeight="26.0" prefWidth="240.0" promptText="UserId" style="-fx-background-color: #cdebf7; -fx-opacity: ;">
+                    <font>
+                        <Font size="14.0" />
+                    </font></TextField>
+                <Label fx:id="invalidlogin" layoutX="12.0" layoutY="312.0" prefHeight="18.0" prefWidth="258.0" textFill="#f23f3f" />
+                <Button fx:id="signInButton" layoutX="62.0" layoutY="363.0" mnemonicParsing="false" onAction="#SignInButtonOnAction" prefHeight="26.0" prefWidth="154.0" style="-fx-background-color: #0a0a0a;" text="Sign In" textFill="#108fea">
+                    <font>
+                        <Font name="Dubai Regular" size="17.0" />
+                    </font>
+                </Button>
+                <Button fx:id="cancelButton" layoutX="61.0" layoutY="432.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="26.0" prefWidth="154.0" style="-fx-background-color: #0a0a0a;" text="Cancel" textFill="#108fea">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Button>
+                <PasswordField fx:id="passwordtext" layoutX="29.0" layoutY="239.0" prefHeight="26.0" prefWidth="240.0" promptText="Password" style="-fx-background-color: #cdebf7;">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </PasswordField>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
+
+

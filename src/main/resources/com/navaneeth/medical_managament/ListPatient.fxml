@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="822.0" prefWidth="1493.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.navaneeth.medical_managament.ListPatientController">
+   <children>
+      <AnchorPane prefHeight="821.0" prefWidth="328.0" style="-fx-background-color: #850b23;">
+         <children>
+            <Label layoutX="15.0" layoutY="45.0" text="Pid" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="117.0" text="Name" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="184.0" text="Did" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="252.0" text="Symptoms" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="11.0" layoutY="475.0" text="Gender" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="12.0" layoutY="540.0" text="Set Prescription" textFill="#fafafa">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="603.0" text="Phone Number" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="pidField" layoutX="14.0" layoutY="79.0" promptText="PatientId" />
+            <TextField fx:id="pNameField" layoutX="14.0" layoutY="144.0" prefHeight="26.0" prefWidth="297.0" promptText="Name" />
+            <TextField fx:id="didField" layoutX="14.0" layoutY="211.0" prefHeight="26.0" prefWidth="297.0" promptText="Doctor Id" />
+            <TextArea fx:id="symptomsField" layoutX="13.0" layoutY="279.0" prefHeight="184.0" prefWidth="298.0" promptText="Symptoms" />
+            <TextField fx:id="genderField" layoutX="13.0" layoutY="503.0" prefHeight="26.0" prefWidth="297.0" promptText="Gender" />
+            <TextField fx:id="prescriptionField" layoutX="13.0" layoutY="567.0" prefHeight="26.0" prefWidth="297.0" promptText="Yes/No" />
+            <TextField fx:id="phoneField" layoutX="12.0" layoutY="637.0" prefHeight="26.0" prefWidth="297.0" promptText="Phone Number" />
+            <Button fx:id="updateButton" layoutX="20.0" layoutY="722.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="101.0" style="-fx-background-color: #261f20;" text="Update" textFill="#008cf7">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="deleteButton" layoutX="178.0" layoutY="722.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="101.0" style="-fx-background-color: #261f20;" text="Delete" textFill="#008cf7">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="patientsTableview" layoutX="334.0" layoutY="84.0" prefHeight="736.0" prefWidth="1142.0">
+        <columns>
+          <TableColumn fx:id="pidColumn" prefWidth="75.0" text="PId" />
+          <TableColumn fx:id="nameColumn" prefWidth="186.4000244140625" text="Name" />
+            <TableColumn fx:id="didColumn" prefWidth="101.60003662109375" text="Did" />
+            <TableColumn fx:id="symptomsColumn" prefWidth="419.199951171875" text="Symptoms" />
+            <TableColumn fx:id="genderColumn" prefWidth="65.60009765625" text="Gender" />
+            <TableColumn fx:id="prescriptionColumn" prefWidth="94.4000244140625" text="SetPrescription" />
+            <TableColumn fx:id="phoneColumn" prefWidth="197.60009765625" text="PhoneNumber" />
+        </columns>
+      </TableView>
+      <Label layoutX="334.0" layoutY="36.0" text="Search Patient">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="searchPatientfield" layoutX="455.0" layoutY="36.0" prefHeight="26.0" prefWidth="1022.0" promptText="search" />
+   </children>
+</AnchorPane>
